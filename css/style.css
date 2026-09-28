@@ -1,0 +1,332 @@
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Page foundation ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0b0f;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    background-color: #111116;
+    border-bottom: 1px solid #292930;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #d1d1d8;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+/* ---------- Hero section ---------- */
+#home {
+    min-height: 80vh;
+    padding: 100px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home p:first-child {
+    color: #a78bfa;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#home h1 {
+    max-width: 800px;
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+#home p:nth-of-type(2) {
+    max-width: 650px;
+    color: #b8b8c2;
+    margin-bottom: 25px;
+}
+
+/* ---------- Hero buttons ---------- */
+
+/* ---------- Hero buttons container ---------- */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+#home a {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#home a:first-of-type {
+    background-color: #a78bfa;
+    color: #0b0b0f;
+}
+
+#home a:first-of-type:hover {
+    background-color: #8b5cf6;
+    transform: translateY(-3px);
+}
+
+#home a:last-of-type {
+    border: 1px solid #a78bfa;
+    color: #a78bfa;
+    margin-left: 12px;
+}
+
+#home a:last-of-type:hover {
+    background-color: #a78bfa;
+    color: #0b0b0f;
+}
+
+/* ---------- Responsive design ---------- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home {
+        min-height: auto;
+        padding: 80px 5%;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    #home p:nth-of-type(2) {
+        font-size: 15px;
+    }
+    
+#about {
+    padding: 60px 5%;
+}
+
+#about h2 {
+    font-size: 30px;
+}
+
+#projects {
+    padding: 60px 5%;
+}
+
+#projects h2 {
+    font-size: 30px;
+}
+
+.project-card {
+    padding: 22px;
+}
+
+#contact {
+    padding: 60px 5%;
+}
+
+#contact h2 {
+    font-size: 30px;
+}
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #home a:last-of-type {
+        margin-left: 0;
+    }
+}
+
+/* ---------- About section ---------- */
+#about {
+    padding: 80px 8%;
+    background-color: #111116;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    font-size: 22px;
+    margin: 30px 0 15px;
+    color: #a78bfa;
+}
+
+#about p {
+    max-width: 750px;
+    color: #b8b8c2;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+#about li {
+    padding: 8px 16px;
+    background-color: #1c1c25;
+    border: 1px solid #292930;
+    border-radius: 6px;
+    color: #d1d1d8;
+}
+
+/* ---------- Projects section ---------- */
+#projects {
+    padding: 80px 8%;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    max-width: 750px;
+    padding: 30px;
+    background-color: #111116;
+    border: 1px solid #292930;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #a78bfa;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #b8b8c2;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #a78bfa;
+    color: #0b0b0f;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #8b5cf6;
+}
+
+/* ---------- Contact section ---------- */
+#contact {
+    padding: 80px 8%;
+    background-color: #111116;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #b8b8c2;
+}
+
+#contact a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #a78bfa;
+    color: #0b0b0f;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#contact a:hover {
+    background-color: #8b5cf6;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    padding: 20px 8%;
+    background-color: #0b0b0f;
+    border-top: 1px solid #292930;
+    text-align: center;
+    color: #888894;
+    font-size: 14px;
+}
