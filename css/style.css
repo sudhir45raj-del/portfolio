@@ -257,6 +257,7 @@ a {
     border: 1px solid #292930;
     border-radius: 12px;
     transition: transform 0.3s ease, border-color 0.3s ease;
+    margin-top: 12px;
 }
 
 .project-card:hover {
