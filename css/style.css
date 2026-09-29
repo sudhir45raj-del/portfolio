@@ -156,6 +156,18 @@ a {
     font-size: 30px;
 }
 
+#services {
+    padding: 60px 5%;
+}
+
+#services h2 {
+    font-size: 30px;
+}
+
+.services-container {
+    grid-template-columns: 1fr;
+}
+
 #projects {
     padding: 60px 5%;
 }
@@ -238,6 +250,76 @@ a {
     border: 1px solid #292930;
     border-radius: 6px;
     color: #d1d1d8;
+}
+
+
+/* ---------- Services section ---------- */
+#services {
+    padding: 80px 8%;
+    background-color: #0b0b0f;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.services-intro {
+    max-width: 650px;
+    color: #b8b8c2;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    padding: 25px;
+    background-color: #111116;
+    border: 1px solid #292930;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #a78bfa;
+}
+
+.service-card h3 {
+    color: #a78bfa;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #b8b8c2;
+}
+
+.services-cta {
+    margin-top: 35px;
+}
+
+.services-cta p {
+    color: #d1d1d8;
+    margin-bottom: 15px;
+}
+
+.services-cta a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #a78bfa;
+    color: #0b0b0f;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.services-cta a:hover {
+    background-color: #8b5cf6;
 }
 
 /* ---------- Projects section ---------- */
