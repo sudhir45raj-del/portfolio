@@ -72,7 +72,7 @@ a {
 
 #home h1 {
     max-width: 800px;
-    font-size: 52px;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     line-height: 1.15;
     margin-bottom: 20px;
 }
@@ -139,11 +139,7 @@ a {
         min-height: auto;
         padding: 80px 5%;
     }
-
-    #home h1 {
-        font-size: 38px;
-    }
-
+    
     #home p:nth-of-type(2) {
         font-size: 15px;
     }
@@ -197,10 +193,6 @@ a {
     .nav-links {
         gap: 12px;
         font-size: 14px;
-    }
-
-    #home h1 {
-        font-size: 32px;
     }
 
     .hero-buttons {
